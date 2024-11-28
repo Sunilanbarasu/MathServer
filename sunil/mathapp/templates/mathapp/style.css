@@ -1,0 +1,46 @@
+
+<style>
+
+.edge
+ { display: block;
+    margin-top: 400px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+    border-color: rgb(0, 255, 106);
+   background-color: rgb(85, 0, 255);
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+    width: 25%;
+    flex-direction: column;
+    
+  }
+  body{
+    background-color: rgba(227, 227, 18, 0.881);
+  }
+div.formelt
+{
+    font-size: 150%;
+   color: red;
+  
+    
+}
+div.box
+{
+  color: chocolate;
+  text-align: center;
+  font-style: unset;
+  
+}
+input
+{
+  padding: 15px;
+  border: 2px solid;
+  border-radius: 4px;
+  width: 40%;
+  align-items: center;
+}
+</style>
