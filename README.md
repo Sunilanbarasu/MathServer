@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-## Date:28-11-2024
+## Date:29-11-2024
 
 ## AIM:
  To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side. 
@@ -35,18 +35,17 @@ Publish the website in the given URL.
 ```
 math.html
 
-
 <html>
 <head>
     <style>
 
 .edge
- { display: block;
-    margin-top: 400px;
+ { display:grid;
+    margin-top: 40px;
     margin-bottom: auto;
-    margin-left: auto;
+    margin-left: auto ;
     margin-right: auto;
-    border-style: dashed;
+    border-style: dotted;
     border-color: rgba(197, 14, 38, 0.816);
    background-color: rgb(180, 228, 35);
     padding-top: 70px;
@@ -62,7 +61,8 @@ math.html
   }
 div.formelt
 {
-    font-size: 150%;
+    font-size: 125%;
+    font-style: unset;
    color: red;
   
     
@@ -70,35 +70,35 @@ div.formelt
 div.box
 {
   color: rgb(100, 39, 11);
-  text-align: center;
-  font-style: unset;
+  text-align:center;
+  font-style: oblique;
   background-color: yellow;
   
 }
 input
 {
-  padding: 15px;
-  border: 2px solid;
+  padding: 10px;
+  border: 3px dotted;
   border-radius: 10px;
-  width: 30%;
-  align-items: center;
+  width: 20%;
+  align-items: bottom;
 }
     </style>
 </head>
 <body>
     <div class="edge">
         <div class="box">
-            <h1>POWER OF A LAMP FILAMENT</h1>
+            <h1>POWER OF  LAMP FILAMENT</h1>
             <h2>Sunil A (24900526)</h2>
             <form method="POST">
                 {% csrf_token %}
                 <div class="formelt">
                     <br>
-                    Intensity : <input type="text" name="Intensity" value="{{I}}"> (in W/m<sup>2</sup>)<br>
+                    Intensity : <input type="text" name="Intensity" value="{{I}}"> ( W/m<sup>2</sup>)<br>
                 </div>
                 <div class="formelt">
                     <br>
-                    Resistance : <input type="text" name="Resistance" value="{{R}}"> (in ohm)<br>
+                    Resistance : <input type="text" name="Resistance" value="{{R}}"> ( ohm)<br>
                 </div>
                 <div class="formelt">
                     <br>
@@ -106,7 +106,7 @@ input
                 </div>
                 <div class="formelt">
                     <br>
-                    Power : <input type="text" name="power" value="{{power}}"> (in watt)<br>
+                    Power : <input type="text" name="power" value="{{power}}"> ( watt)<br>
                 </div>
             </form>
         </div>
@@ -116,7 +116,6 @@ input
 
 
 views.py
-
 
 from django.shortcuts import render 
 def powerbulb(request): 
@@ -141,7 +140,6 @@ def powerbulb(request):
 
 urls.py
 
-
 from django.contrib import admin 
 from django.urls import path 
 from mathapp import views 
@@ -151,14 +149,14 @@ urlpatterns = [
     path('',views.powerbulb,name="powerofalamp")
 ]
 
+
 ```
 
 
 ## SERVER SIDE PROCESSING:
-![alt text](2(.).png)
+![alt text](<mathapp vs.png>)
 
 ## HOMEPAGE:
-![alt text](1(.).png)
-
+![alt text](mathapp.png)
 ## RESULT:
 The program for performing server side processing is completed successfully.
